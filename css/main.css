@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "IranSans";
+  src: url("../fonts/IRANSansWeb.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/IRANSansWeb.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/IRANSansWeb.woff2") format("woff2"),
+    url("../fonts/IRANSansWeb.woff") format("woff"),
+    url("../fonts/IRANSansWeb.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IranSans";
+  direction: rtl;
+  text-align: right;
+  background-color: rgb(240, 237, 233);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  width: 40%;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 10%;
+  padding: 2rem 3rem;
+  box-shadow: 0px 0px 23px -1px rgba(0, 0, 0, 0.73);
+}
+
+.card .pg1 {
+  width: 100%;
+}
+
+.card .pg1 h3 {
+  text-align: center;
+}
+
+.card .pg1 p {
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.card .pg1 form {
+  width: 100%;
+  text-align: center;
+}
+
+.card .pg1 input[type="text"] {
+  width: 100%;
+  font-family: "IranSans";
+  text-align: center;
+  padding: 9px 12px;
+  border: 1px solid #e0e0e2;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 0.7rem;
+}
+
+.card .pg1 .mssg1 {
+  visibility: hidden;
+  border-radius: 10px;
+  padding: 0.1rem 1rem;
+  color: red;
+}
+
+.card .pg1 button {
+  width: 100%;
+  font-family: "IranSans";
+  margin-top: 2rem;
+  padding: 9px 12px;
+  border-radius: 8px;
+  border: 1px solid rgb(154, 12, 29);
+  background-color: rgb(166, 13, 31);
+  color: rgb(232, 230, 227);
+  outline: none;
+  cursor: pointer;
+}
+
+.card .pg1 button:hover {
+  background-color: rgb(139, 4, 20);
+}
+.card .pg2 {
+  display: none;
+  width: 100%;
+}
+
+.card .pg2 h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.card .pg2 p {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.card .pg2 form {
+  width: 100%;
+  text-align: center;
+}
+
+.card .pg2 input[type="text"] {
+  width: 100%;
+  font-family: "IranSans";
+  text-align: center;
+  padding: 9px 12px;
+  border: 1px solid #e0e0e2;
+  letter-spacing: 15px;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 0.7rem;
+}
+
+.card .pg2 button {
+  width: 100%;
+  font-family: "IranSans";
+  padding: 9px 12px;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid rgb(154, 12, 29);
+  background-color: rgb(166, 13, 31);
+  color: rgb(232, 230, 227);
+  outline: none;
+  cursor: pointer;
+}
+
+.card .pg2 button:hover {
+  background-color: rgb(139, 4, 20);
+}
+
+.card .pg2 #send-again {
+  color: blue;
+  margin: 0.5rem 0px;
+  display: none;
+  cursor: pointer;
+  display: none;
+}
+
+.card .pg2 .mssg2 {
+  visibility: hidden;
+  border-radius: 10px;
+  padding: 0.1rem 1rem;
+  color: red;
+}
+
+.card .pg2 #bar {
+  width: 100%;
+  height: 3px;
+  background-color: darkblue;
+}
+
+@media (max-width: 800px) {
+  .card {
+    width: 70%;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: 90%;
+  }
+}

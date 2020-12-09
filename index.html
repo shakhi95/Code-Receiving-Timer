@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NumInput</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="pg1">
+          <h3>ثبت شماره همراه</h3>
+          <p>لطفاً شماره موبایل خود را وارد کنید:</p>
+          <form id="num-form">
+            <input
+              id="num-input"
+              type="text"
+              placeholder="شماره موبایل..."
+            /><br />
+            <small class="mssg1">تست</small><br />
+            <button type="submit">ادامـه</button>
+          </form>
+        </div>
+        <div class="pg2">
+          <h3>احـراز هـویت</h3>
+          <small
+            >کد تایید برای <span id="showNumber">09166895995</span> ارسال
+            شد.</small
+          >
+          <p>کد تایید را وارد نمایید:</p>
+          <form id="code-form">
+            <!-- add - depends on code length -->
+            <input id="code-input" type="text" placeholder="____" /><br />
+            <small id="send-again">ارسـال مـجدد کـد</small>
+            <small class="mssg2">تست</small><br />
+            <small>زمان باقی مانده:</small><br />
+            <small><span id="sec">00</span> : <span id="min">00</span></small
+            ><br />
+            <div id="bar"></div>
+            <br />
+            <button type="submit">ادامـه</button><br /><button id="backbtn">
+              بـازگـشت
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
